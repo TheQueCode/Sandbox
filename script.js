@@ -114,3 +114,6 @@ function sortArray(arr){
 }
 
 sortArray(numbers2);
+
+// Create a function that filters out negative numbers
+
