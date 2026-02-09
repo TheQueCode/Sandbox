@@ -117,3 +117,12 @@ sortArray(numbers2);
 
 // Create a function that filters out negative numbers
 
+// Remove the spaces found in a string
+
+// Return a Boolean if a number is divisible by 10
+
+// Return the number of vowels in a string
+
+// Create a function that finds the maximum number in  an array
+
+// Check if a string is a palindrome
