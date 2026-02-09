@@ -35,6 +35,7 @@ function kiloToMiles(kilos){
 // different ways
 
 const numbers = [1,2,3,4,5,6,7,8,9,10];
+const numbers2 = [12,35,46,25,466,77,98,999,1110];
 
 // for loop
 
@@ -91,4 +92,25 @@ function reverse(array){
   return array;
 }
 
-console.log(reverse(numbers));
+// console.log(reverse(numbers));
+
+// with a for loop
+
+function reverseArrayManually(arr){
+  const newReversedArray = [];
+  for (let i = arr.length - 1; i >= 0; i--){
+    newReversedArray.push(arr[i]);
+  }
+  return newReversedArray;
+}
+
+console.log(reverseArrayManually(numbers));
+
+// Sort an array from lowest to highest
+
+function sortArray(arr){
+  arr.sort((a, b) => a - b);
+  console.log(arr);
+}
+
+sortArray(numbers2);
