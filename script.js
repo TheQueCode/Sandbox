@@ -87,7 +87,8 @@ console.log(sumAgain);
 // Create a function that reverses an array
 
 function reverse(array){
-  console.log(array);
+  array.reverse();
+  return array;
 }
 
-reverse(numbers);
+console.log(reverse(numbers));
