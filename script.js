@@ -35,7 +35,8 @@ function kiloToMiles(kilos){
 // different ways
 
 const numbers = [1,2,3,4,5,6,7,8,9,10];
-const numbers2 = [12,35,46,25,466,77,98,999,1110];
+const numbers2 = [12,35,46,25,77,98,999,1110];
+const numbers3 = [23, -16, 56, 43, -12, -99, 110];
 
 // for loop
 
@@ -116,6 +117,26 @@ function sortArray(arr){
 sortArray(numbers2);
 
 // Create a function that filters out negative numbers
+
+function noNegs(nums){
+  const positives = [];
+  for(let i = 0; i < nums.length; i++){
+    if (nums[i] > 0) {
+      positives.push(nums[i]);
+    }
+  }
+  return positives;
+}
+
+console.log(noNegs(numbers3));
+
+// using filter
+
+function filterNegs(numbers){
+  return numbers.filter(number => number > 0)
+}
+
+console.log(filterNegs(numbers3));
 
 // Remove the spaces found in a string
 
