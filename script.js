@@ -140,10 +140,65 @@ console.log(filterNegs(numbers3));
 
 // Remove the spaces found in a string
 
+const str = "   Hello World! This is a test.  "
+
+const noSpaces = str.replaceAll(/\s/g, '')
+
+console.log(noSpaces);
+
 // Return a Boolean if a number is divisible by 10
+
+function trueOrFalse(number){
+  return number % 10 === 0;
+}
+
+console.log(trueOrFalse(100));
 
 // Return the number of vowels in a string
 
+function countVowels(str){
+  let count = 0;
+  const vowels = 'aeiou';
+  const lowerCaseStr = str.toLowerCase();
+
+  for (const char of lowerCaseStr){
+    if (vowels.includes(char)){
+      count++;
+    }
+  }
+  return count;
+}
+
+const text = 'Javascript Program';
+console.log(countVowels(text));
+
+// matches
+
+function countVowelsAgain(str){
+  const matches = str.match(/[aeiou]/gi);
+  return matches ? matches.length : 0;
+}
+
+console.log(countVowelsAgain(text));
+
 // Create a function that finds the maximum number in  an array
 
+function findMax(array){
+  return Math.max(...array);
+}
+
+console.log(findMax(numbers3));
+console.log(findMax(numbers2));
+console.log(findMax(numbers));
+
 // Check if a string is a palindrome
+
+function isPalindrome(str){
+  const lower = str.toLowerCase();
+  const reversed = lower.split('').reverse().join('');
+  return lower === reversed;
+}
+
+console.log(isPalindrome('racecar'));
+console.log(isPalindrome('Hello'));
+console.log(isPalindrome('noon'));
